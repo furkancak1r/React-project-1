@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import User_Input from './components/User_Input';
 import Navbar from './components/Navbar';
+import UserCard from './components/UserCard';
 class App extends Component {
   
   render() {
     return (
       <div>
       <Navbar></Navbar>
-      <User_Input></User_Input>
+      <UserCard></UserCard>
       </div>
       
     )
