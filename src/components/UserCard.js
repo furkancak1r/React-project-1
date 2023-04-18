@@ -9,9 +9,9 @@ class UserCard extends Component {
         };
     };
 
-    handleFormSubmit = (name, surname, salary) => {
+    handleFormSubmit = (id,name, surname, salary) => {
         this.setState(prevState => ({
-            users: [...prevState.users, {name: name, surname: surname, salary:salary}]
+            users: [...prevState.users, {id : id+1, name: name, surname: surname, salary:salary}]
         }));
     }
 
@@ -26,6 +26,8 @@ class UserCard extends Component {
                             <p className='card-text' >Name: {user.name}</p>
                             <p className='card-text'>Surname: {user.surname}</p>
                             <p className='card-text'>Salary: {user.salary}</p>
+                            <p className='card-text'>id: {user.id}</p>
+
 
                         </div>
                     </div>

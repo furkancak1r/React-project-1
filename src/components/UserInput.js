@@ -4,6 +4,7 @@ class UserInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      id:0,
       name: "",
       surname: "",
       salary: ""
@@ -29,7 +30,7 @@ class UserInput extends Component {
           <div className=" d-flex justify-content-center col-11">
             <button type="submit" className="btn btn-primary" onClick={(event) => {
               event.preventDefault();
-              this.props.onSubmit(this.state.name, this.state.surname, this.state.salary);
+              this.props.onSubmit(this.state.id,this.state.name, this.state.surname, this.state.salary);
             }}>Submit</button>
           </div>
         </form>
